@@ -1,0 +1,265 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    padding: 5px;
+    height: 100%;
+    display: grid;
+    grid-template-rows:0.5fr 0.5fr 1fr 0.5fr 0.5fr;
+    grid-template-columns:1fr 1fr 0.7fr 1.3fr;
+    grid-template-areas:
+    "l-top1 l-top2 l-top3 l-top4"
+    "l-top1 l-top2 l-top3 c3"
+    "c1 c2 l-top3 c3"
+    "c1 b1 b3 b3"
+    "c1 b2 b3 b3"
+    ;
+    gap: 5px;
+    background-color: black;
+}
+.l-top1{
+    position: relative;
+    background-color: rgb(165, 4, 180);
+    grid-area:l-top1;
+    border-radius: 15px;
+    
+}
+.l-top1 img{
+    position: absolute;
+    height: 230px;
+    left: 17%;
+    bottom:0%;
+    object-fit: cover;
+    
+}
+.l-top2{
+    position: relative;
+    background-color: rgb(22, 22, 22);
+    grid-area:l-top2;
+    border-radius: 15px;
+}
+.l-top2 img{
+    position: absolute;
+    height: 240px;
+    left: 11%;
+}
+.l-top3{
+    display: flex;
+    flex-direction: column;
+    font-family: "Neue Montreal", sans-serif;
+    padding-top: 30%;
+    padding-left: 18%;
+    gap: 7%;
+    background-color: rgb(22, 22, 22);
+    grid-area:l-top3;
+    border-radius: 15px;
+    color:rgba(255, 255, 255, 0.778);
+    font-size:13px;
+}
+.l-top4{
+    background: #d451c9;
+    background: radial-gradient(circle, rgb(223, 33, 207) 0%, rgba(186, 73, 178, 1) 100%);
+    grid-area:l-top4;
+    border-radius: 40px;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-size: 20px;
+    color: white;
+    position: relative;
+
+
+}
+.l-top4 .smile{
+    height:90px;
+    width: 90px;
+    position: absolute;
+    top: 19%;
+}
+.l-top4 .p1{
+    position: absolute;
+    top: 35%;
+    left:17%;
+}
+.l-top4 .board{
+    height:80px;
+    width: 80px;
+    position: absolute;
+    top: 23%;
+    right:33%;
+}
+.l-top4 .p2{
+    position: absolute;
+    top: 35%;
+    right:10%;
+}
+.c1{
+    position: relative;
+    background-color: rgb(8, 8, 8);
+    grid-area:c1;
+    border-radius: 15px;
+    border: 4px solid yellowgreen;
+}
+.c1 h1{
+    position: absolute;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 100px;
+    left: 10%;
+    color: white;
+    
+}
+.c1 p{
+    position: absolute;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color:rgb(125, 4, 165);
+    top: 21%;
+    left: 10%;
+}
+.c1 img{
+    position: absolute;
+    height: 60%;
+    width: 100%;
+    bottom: 1%;
+    border-radius: 10px;
+}
+.c2{
+    background-color: rgb(22, 22, 22);
+    grid-area:c2;
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    justify-content: space-between;
+    
+}
+.c2 .d1{
+    width: 100%;
+    height: 30%;
+    position: relative;
+    margin-bottom: 10%;
+}
+.c2 .d1 img{
+    position: absolute;
+    left: -6%;
+}
+.c2 .d1 div{
+    position: absolute;
+    left: 20%;
+    top: 28%;
+}
+
+
+.c3{
+    background-color: rgb(183, 255, 0);
+    grid-area:c3;
+    border-radius: 15px;
+    position: relative;
+    
+}
+.c3 img{
+    position: absolute;
+    height:350px;
+    width: 350px;
+    object-fit: cover;
+    left: 13%;
+    bottom:0%;
+
+}
+.b1{
+    position: relative;
+     background-color: rgb(22, 22, 22);
+    grid-area:b1;
+    border-radius: 15px;
+}
+.b1 img{
+    position: absolute;
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+}
+
+.b2{
+    position: relative;
+    background-color: rgb(183, 255, 0);
+    grid-area:b2;
+    border-radius: 30px;
+}
+.b2 img{
+    position: absolute;
+    height: 100%;
+    width: 33%;
+
+}
+.b2 .qr{
+    position: absolute;
+    left: 33%;
+    top: 20%;
+}
+.b2 i{
+    font-size: 20px;
+    position: absolute;
+    top: 17%;
+    right: 15%;
+    
+}
+.b3{
+    background-color: rgb(255, 255, 255);
+    grid-area:b3;
+    border-radius: 15px;
+    display: flex;
+    padding: 0px 10px;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.b3 .box1{
+    padding: 10px 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    font-family: "General Sans", sans-serif;
+    font-weight: 700;
+
+}
+.b3 .box1 h2{
+    font-size: 45px;
+}
+.box2{
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0px 10px;
+    padding-bottom: 20px;
+}
+.box2 h1{
+    font-size: 70px;
+
+}
+.box2 div img{
+    margin-top: -20%;
+}
+.box2 button{
+    background-color: #ad05e0;
+    height: 20%;
+    width: 100%;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+
+}
+
+
+
